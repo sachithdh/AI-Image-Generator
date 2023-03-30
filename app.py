@@ -38,5 +38,6 @@ def success():
     else:
         return redirect(url_for("home"))
 
+# run the app
 if __name__ == "__main__":
     app.run()
