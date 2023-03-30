@@ -24,3 +24,7 @@ $ python app.py
 ```
 Visit ```http://127.0.0.1:5000/``` in your browser
 
+
+### Screenshot
+
+<img src="/static/Images/screencapture-127-0-0-1-5000-success-2023-03-30-13_36_35.png" width="60%">
