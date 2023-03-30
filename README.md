@@ -15,4 +15,5 @@ $ cd AI-Image-Generator
 $ python3 -m pip install -r requirements.txt
 ```
 ## Usage
+Generate [Openai API key](https://platform.openai.com/account/api-keys) and add it to the ```.env``` file.
 
