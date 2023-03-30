@@ -1,0 +1,94 @@
+body {
+    /* background-color: #292826; */
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar {
+    overflow: hidden;
+    background-color: #00203fff;
+    position: fixed; /* fixed position to keep navbar at top */
+    top: 0;
+    width: 100%; /* set width to 100% */
+}
+
+nav ul{
+    
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 0;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav h3{
+    padding-left: 30px;
+}
+
+.hero{
+    background-color:#f99442;
+    padding: 150px;
+}
+.src {
+    display: flex;
+    background-color: #292826;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: -150px;
+    padding: 50px;
+}
+
+.src input{
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 500px;
+    outline: none;
+    resize: both;
+}
+
+.src button{
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.src button:hover{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+.src select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

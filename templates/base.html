@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+    <div class="navabar">
+        <nav>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <h3 style="color: white;text-align: left;">AI Image Generator</h3>
+            </ul>
+      </nav>
+    </div>
+
+    <div class="hero"></div>
+    <div class="src">
+        <form action="/generate" method="post">
+            <input type="text" name="prompt" placeholder="Prompt"><br>
+            <select name="size">
+                <option disabled value="">Select size</option>
+                <option value="256x256">Small</option>
+                <option selected value="512x512">Medium</option>
+                <option value="1024x1024">Large</option>
+            </select><br>
+            <button type="submit">Generate</button>
+        </form>
+
+    </div>
+
+      {% block content %}
+      {% endblock %}
+       
+</body>
+
+
+
+
+
+
+
+
+</html>
