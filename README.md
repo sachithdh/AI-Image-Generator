@@ -1,6 +1,6 @@
 # AI-Image-Generator
 
-Simple image generator built using the [OpenAI](https://platform.openai.com/docs/guides/images/introduction) API
+Simple image generator built with **Python flask** framework [OpenAI](https://platform.openai.com/docs/guides/images/introduction) API
 
 ## Installation
 
