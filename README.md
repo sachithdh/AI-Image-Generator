@@ -17,3 +17,10 @@ $ python3 -m pip install -r requirements.txt
 ## Usage
 Generate [Openai API key](https://platform.openai.com/account/api-keys) and add it to the ```.env``` file.
 
+#### Run the app
+
+```console
+$ python app.py
+```
+Visit ```http://127.0.0.1:5000/``` in your browser
+
