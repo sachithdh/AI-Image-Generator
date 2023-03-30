@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from app.generator import generateImg
+from app.main import generateImg
 
 app = Flask(__name__)
 app.secret_key = "key"  
