@@ -1,14 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from app.main import generateImg
 
+# Initializing a Flask app
 app = Flask(__name__)
 app.secret_key = "key"  
 
-# Initializing a Flask app
+# Defining a route for the home page
 @app.route("/")
 def home():
     return render_template("base.html")
 
+# Defining a route for generating an image
 @app.route("/generate", methods=["POST", "GET"])
 def generate():
     prmpt = ""
@@ -17,8 +19,9 @@ def generate():
         if request.form["prompt"] and request.form["size"]:  # Checking if the required form data is present
             prmpt = request.form["prompt"]
             sz = request.form["size"]
-            session["prompt"] = prmpt
+            session["prompt"] = prmpt # removing data from the session
             session["size"] = sz
+            
             return redirect(url_for("success"))
     
     # Redirecting to the home route if the required form data is not present
