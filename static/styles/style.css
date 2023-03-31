@@ -1,5 +1,4 @@
 body {
-    /* background-color: #292826; */
     margin: 0;
     padding: 0;
   }
@@ -45,7 +44,7 @@ nav h3{
 
 .hero{
     background-color:#f99442;
-    padding: 150px;
+    padding: 200px;
 }
 .src {
     display: flex;
@@ -55,7 +54,7 @@ nav h3{
     text-align: center;
     width: 50%;
     margin: auto;
-    margin-top: -150px;
+    margin-top: -300px;
     padding: 50px;
 }
 
