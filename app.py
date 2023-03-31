@@ -4,6 +4,7 @@ from app.main import generateImg
 app = Flask(__name__)
 app.secret_key = "key"  
 
+# Initializing a Flask app
 @app.route("/")
 def home():
     return render_template("base.html")
@@ -13,14 +14,14 @@ def generate():
     prmpt = ""
     sz = ""
     if request.method == "POST":
-        if request.form["prompt"] and request.form["size"]:
+        if request.form["prompt"] and request.form["size"]:  # Checking if the required form data is present
             prmpt = request.form["prompt"]
             sz = request.form["size"]
             session["prompt"] = prmpt
             session["size"] = sz
             return redirect(url_for("success"))
     
-    
+    # Redirecting to the home route if the required form data is not present
     return redirect(url_for("home"))
         
     
