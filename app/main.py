@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def generateImg(text, sz):
-    openai.api_key = os.getenv("OPENAI_API_KEY") # Setting the API key for OpenAI
+    openai.api_key = os.getenv("OPENAI_API_KEY")  # Setting the API key for OpenAI
     
     # Creating an image using given prompt text and image size
     img = openai.Image.create(
