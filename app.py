@@ -35,9 +35,9 @@ def success():
         session.pop("prompt", None)  
         session.pop("size", None)
 
-        return render_template("index.html", imgUrl = url)
+        return render_template("index.html", imgUrl = url) # Rendering the success template with the image URL
     else:
-        return redirect(url_for("home"))
+        return redirect(url_for("home")) # Redirect to the home route of prompt text is not present in the session 
 
 # run the app
 if __name__ == "__main__":
