@@ -34,7 +34,9 @@ def success():
     if "prompt" in session:
         prmpt = session["prompt"]
         sz = session["size"]
-        url = generateImg(prmpt, sz)
+        
+        url = generateImg(prmpt, sz) # Generating the image URL using the prompt text and image size
+        
         session.pop("prompt", None)  
         session.pop("size", None)
 
