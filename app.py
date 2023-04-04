@@ -19,8 +19,8 @@ def generate():
         if request.form["prompt"] and request.form["size"]:  # Checking if the required form data is present
             prmpt = request.form["prompt"]
             sz = request.form["size"]
-            session["prompt"] = prmpt # removing data from the session
-            session["size"] = sz
+            session["prompt"] = prmpt 
+            session["size"] = sz 
             
             return redirect(url_for("success"))
     
@@ -37,8 +37,8 @@ def success():
         
         url = generateImg(prmpt, sz) # Generating the image URL using the prompt text and image size
         
-        session.pop("prompt", None)  
-        session.pop("size", None)
+        session.pop("prompt", None)  # removing data from the session
+        session.pop("size", None)  # removing data from the session
 
         return render_template("index.html", imgUrl = url) # Rendering the success template with the image URL
     else:
