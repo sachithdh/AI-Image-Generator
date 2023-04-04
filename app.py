@@ -19,8 +19,9 @@ def generate():
         if request.form["prompt"] and request.form["size"]:  # Checking if the required form data is present
             prmpt = request.form["prompt"]
             sz = request.form["size"]
-            session["prompt"] = prmpt 
-            session["size"] = sz 
+            
+            session["prompt"] = prmpt # add data to the session
+            session["size"] = sz # add data to the session
             
             return redirect(url_for("success"))
     
@@ -42,7 +43,7 @@ def success():
 
         return render_template("index.html", imgUrl = url) # Rendering the success template with the image URL
     else:
-        return redirect(url_for("home")) # Redirect to the home route of prompt text is not present in the session 
+        return redirect(url_for("home")) # Redirect to the home route if prompt text is not present in the session 
 
 # run the app
 if __name__ == "__main__":
