@@ -18,7 +18,7 @@ $ python3 -m pip install -r requirements.txt
 Generate [Openai API key](https://platform.openai.com/account/api-keys) and add it to the ```.env``` file.
 
 ``` console
-OPENAI_API_KEY=Replace with your OPENAI API KEY
+OPENAI_API_KEY= <add your OPENAI API KEY here>
 ```
 
 #### Run the app
