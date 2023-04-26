@@ -4,7 +4,7 @@ Simple image generator built with **Python flask** framework [OpenAI](https://pl
 
 ## Installation
 
-**To install automatically**, run ```python run.py``` on your terminal
+**To install automatically**, run ```python run.py``` command on your terminal
 
 Or follow these steps
 
