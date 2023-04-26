@@ -4,6 +4,10 @@ Simple image generator built with **Python flask** framework [OpenAI](https://pl
 
 ## Installation
 
+**To install automatically**, run ```python run.py``` on your terminal
+
+Or follow these steps
+
 ```console
 # clone the repo
 $ git clone https://github.com/sachith-d/AI-Image-Generator.git
@@ -14,6 +18,8 @@ $ cd AI-Image-Generator
 # install the requirements
 $ python3 -m pip install -r requirements.txt
 ```
+
+
 ## Usage
 Generate [Openai API key](https://platform.openai.com/account/api-keys) and add it to the ```.env``` file.
 
